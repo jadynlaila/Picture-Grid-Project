@@ -1,38 +1,39 @@
 .cell{
     border: 20px;
-    margin: 1px;
+    margin: 2px;
     border-color: grey;
+    max-width: 300px;
 }
 
 body{
-    border-color: grey;
-    border: 20px;
-}
+    border: solid 20px grey;
+    max-width: 1275px;
 
-p{
-    background-color: burlywood;
-    border: 20px;
-    border-color: black;
-    
 }
 
 ul{
+    background-color: burlywood;
+    border: 20px;
+    border-color: black;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden
-    
+    padding: 20px;
+    overflow: hidden;
+    margin: 0px;
 }
 li{
-    display:inline
+    display:inline;
+    margin: 0px;
+}
+p{
+    margin: 0px;
 }
 .container{
     display: grid;
     grid-template-columns: repeat(5,auto);
     grid-template-rows: repeat(18,auto);
-    border: 20px;
+    /* border: 20px;
     margin: 1px;
-    border-color: grey;
+    border-color: grey; */
     /* justify-items: stretch; */
     /*grid-template-areas: 
     "logo logo logo logo facebook"
@@ -44,7 +45,8 @@ li{
     "familyCostumes familyCostumes jokerMakeup allAges wigs"
     "musicals superSale superSale candy greatHats"; */
     justify-items: stretch;
-    max-width: 252;
+    max-width: 300px;
+
 }
 
 /* 1 */.cell-a{
@@ -159,8 +161,10 @@ li{
 
 .cell-v{
     grid-area: address;
-    grid-row: 15/18;
+    grid-row: 17/18;
     grid-column: 5/6;
+    text-align: right;
+    color: burlywood;
 }
 
 
